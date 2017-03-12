@@ -12,18 +12,8 @@ class Portfolio extends Component {
 						<img src="" alt=""/>
 						<div className="content">
 							<h6 className="title"></h6>
-						</div>
-					</li>
-					<li className="portfolio-old__list-item">
-						<img src="" alt=""/>
-						<div className="content">
-							<h6 className="title"></h6>
-						</div>
-					</li>
-					<li className="portfolio-old__list-item">
-						<img src="" alt=""/>
-						<div className="content">
-							<h6 className="title"></h6>
+							<a href="" className="btn-link">Sources</a>
+							<a href="" className="btn-link">Preview</a>
 						</div>
 					</li>
 				</ul>
