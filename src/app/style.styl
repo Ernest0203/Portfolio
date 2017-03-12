@@ -1,0 +1,93 @@
+h-color = #b9b963
+main-color = #696958
+bg-color = rgba(186, 186, 173, .6)
+box-shadow = 0px 4px 10px 2px rgba(179,179,179,1)
+
+@import './fonts/fonts.styl'
+@import '../navbar/navbar.styl'
+@import '../about/about.styl'
+@import '../portfolio/portfolio.styl'
+@import '../signin/signin.styl'
+@import '../skills/skills.styl'
+
+* 
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+html, body, #app, .container 
+	height: 100%
+a
+	text-decoration: none
+	transition: .2s
+li
+	list-style: none
+h1,h2,h3,h4,h5,h6 
+	text-align: center
+	text-transform: uppercase
+
+body
+	background-image: url('images/bg.png')
+	color main-color
+	font-family 'OpenSans-Regular', 'Arial', sans-serif
+		
+.container
+	padding: 2% 10%
+	
+.header
+	background-color: bg-color
+	border-radius: 10px
+	box-shadow box-shadow
+	display: flex
+	justify-content: space-between
+	margin-bottom: 30px
+	padding: 25px
+	.logo
+		height: 50px
+		width: 50px
+
+.footer
+	background-color bg-color
+	border-radius: 10px
+	box-shadow box-shadow
+	display: flex
+	align-items: center
+	margin-top: 30px
+	padding: 25px
+	h2
+		font-size: 23px
+		margin-right: 2.5%
+	.email
+		border-right: 1px solid main-color
+		margin-right: 1.5%
+		padding: 2px 1.5% 0 0
+		span 
+			font-size: 18px
+			margin-right: 10px
+		a 
+			color #149daf
+			font-size: 18px
+	.skype
+		padding-top: 2px
+		span 
+			font-size: 18px
+			margin-right: 10px
+		a 
+			color #149daf
+			font-size: 18px
+	
+.signin-popup
+	background-color rgba(0,0,0,.5)
+	display: flex
+	height: 100vh
+	width: 100vw
+	position: absolute
+	top: 0
+	left: 0
+	opacity: 0
+	z-index: -1
+	&--show
+		opacity: 1
+		z-index: 1
+		transition: .3s
+	&--hide
+		display: none
