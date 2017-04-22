@@ -13,6 +13,6 @@ export default (
 		<Route path="/about" component={About} />
 		<Route path="/skills" component={Skills} />
 		<Route path="/portfolio" component={Portfolio} />
-		<Route path="/admin" component={Admin} onEnter={Admin.onEnter} />
+		<Route path="/admin" component={Admin} />
 	</Route>
 )

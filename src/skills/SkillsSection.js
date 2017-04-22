@@ -11,7 +11,7 @@ class SkillsSection extends Component {
 		let listItem = {};
 
 		if (!section) {
-			listItem = <li className="skills__list-item--no-data">There are no skills added yet!!!</li>
+			listItem = <li className="skills__list-item--no-data">There are no skills added yet!</li>
 		}
 		else {
 			listItem = 
