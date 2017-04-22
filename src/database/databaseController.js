@@ -32,15 +32,9 @@ export default class DatabaseController {
 			this.rootRef.child('projects').child('old').once('value', (data) => {
 				Object.keys(data.val()).forEach((project, index) => {
 					const newProject = { ...data.val()[project],	image: imgURL[index] };
-					console.log(newProject)
 					this.rootRef.child('projects').child('old').child(project).update(newProject);
 				})
 			});
-			//let a = this.rootRef.child('projects').child('old').child('p1').push(imgURL[1]);
-			//console.log(a)
-			imgURL.forEach(url => {
-				//this.rootRef.child('projects').child('old').child('img').set(url);
-			})
 		}, 2000)
 	}
 

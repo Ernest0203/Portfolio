@@ -1,11 +1,14 @@
 .portfolio
 	background-color: bg-color
-	border-radius: 10px
+	border-radius: 10px 0 0 10px
 	box-shadow: box-shadow
 	height: calc(100% - 250px)
 	padding: 25px
 	overflow-y: scroll
 	position: relative
+	body::-webkit-scrollbar-track {
+  	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	}
 	&__title
 		margin-bottom: 30px
 	.empty
@@ -91,3 +94,16 @@
 				background-color transparent
 				border: 1px solid #efe778
 				color: #efe778
+
+.portfolio::-webkit-scrollbar {
+  width: 6px;
+}
+.portfolio::-webkit-scrollbar-track {
+	border-radius: 10px
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.portfolio::-webkit-scrollbar-thumb {
+	border-radius: 10px
+  background-color: darken(bg-color, 30%);
+  outline: 1px solid slategrey;
+}
